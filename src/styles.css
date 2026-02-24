@@ -1,0 +1,115 @@
+/* roboto-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/fonts/roboto-serif-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(40, 37, 33);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(63, 65, 61);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  box-shadow: 0 0 10px 0 black;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  margin: 0;
+  padding: 5px;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 5px 0 black;
+  justify-self: center;
+  text-shadow: 0 0 2px pink;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  gap: 1em;
+  position: sticky;
+  top: 0px;
+}
+
+button {
+  font-family: "Roboto Serif";
+  text-shadow: 0px 15px 5px 0px black;
+  border: 0px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(63, 65, 61);
+  color: whitesmoke;
+}
+/* MAIN */
+#content {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  column-gap: 2rem;
+  min-height: 0;
+  height: 500px;
+  max-width: 100%;
+  background-color: rgb(40, 37, 33);
+}
+
+h2 {
+  margin: 0;
+}
+
+#mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+  font-family: "Roboto Serif";
+  color: whitesmoke;
+  height: auto;
+  min-height: 0;
+  padding: 50px;
+}
+
+#imageContainer {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 50px;
+}
+
+img {
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 0px 50px 0px black;
+}
+
+#footer {
+  box-shadow: inset 0 0 5px 0 black;
+  background-color: rgb(30, 17, 5);
+  grid-column: span 2;
+  color: white;
+  padding: 30px 10% 26px 10%;
+  font-style: italic;
+}
